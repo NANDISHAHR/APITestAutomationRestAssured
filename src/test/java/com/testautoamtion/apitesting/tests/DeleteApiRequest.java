@@ -6,11 +6,14 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.hamcrest.Matchers;
 
 import com.jayway.jsonpath.JsonPath;
 import com.testautoamtion.apitesting.utils.BaseTest;
 import com.testautoamtion.apitesting.utils.FileNameConstants;
+import com.testautomationapitesting.listners.RestAssuredListeners;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -19,10 +22,13 @@ import net.minidev.json.JSONArray;
 
 public class DeleteApiRequest extends BaseTest {
 
+	private static final Logger logger = LogManager.getLogger(DeleteApiRequest.class);
+
 	@Test
 	public void deleteApiRequest() {
 
 		try {
+			logger.info("Delete API Request started...");
 			String postAPIRequestBody = FileUtils.readFileToString(new File(FileNameConstants.POST_API_REQUEST_BODY),
 					"UTF-8");
 			String tokenAPIRequestBody = FileUtils.readFileToString(new File(FileNameConstants.TOKEN_REQUEST_BODY),
@@ -33,9 +39,9 @@ public class DeleteApiRequest extends BaseTest {
 					"UTF-8");
 
 			// POST API
-			Response response = RestAssured.given().contentType(ContentType.JSON).body(postAPIRequestBody)
-					.baseUri("https://restful-booker.herokuapp.com/booking").when().post().then().assertThat()
-					.statusCode(200).extract().response();
+			Response response = RestAssured.given().filter(new RestAssuredListeners()).contentType(ContentType.JSON)
+					.body(postAPIRequestBody).baseUri("https://restful-booker.herokuapp.com/booking").when().post()
+					.then().assertThat().statusCode(200).extract().response();
 
 			JSONArray jsonArrayFirstName = JsonPath.read(response.body().asString(), "$.booking..firstname");
 			String firstName = (String) jsonArrayFirstName.get(0);
@@ -44,8 +50,9 @@ public class DeleteApiRequest extends BaseTest {
 			int bookingId = JsonPath.read(response.body().asString(), "$.bookingid");
 
 			// GET API call
-			RestAssured.given().contentType(ContentType.JSON).baseUri("https://restful-booker.herokuapp.com/booking")
-					.when().get("/{bookingId}", bookingId).then().statusCode(200);
+			RestAssured.given().filter(new RestAssuredListeners()).contentType(ContentType.JSON)
+					.baseUri("https://restful-booker.herokuapp.com/booking").when().get("/{bookingId}", bookingId)
+					.then().statusCode(200);
 
 			// Token Generation
 			Response tokenResponse = RestAssured.given().contentType(ContentType.JSON).body(tokenAPIRequestBody)
@@ -70,6 +77,8 @@ public class DeleteApiRequest extends BaseTest {
 			RestAssured.given().contentType(ContentType.JSON).header("Cookie", "token=" + token)
 					.baseUri("https://restful-booker.herokuapp.com/booking").when().delete("{bookingId}", bookingId)
 					.then().assertThat().statusCode(201);
+
+			logger.info("Delete API Request ended...");
 
 		} catch (IOException e) {
 			e.printStackTrace();

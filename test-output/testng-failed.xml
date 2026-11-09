@@ -7,6 +7,7 @@
         <methods>
           <include name="beforeMethod"/>
           <include name="deleteApiRequest"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- com.testautoamtion.apitesting.tests.DeleteApiRequest -->
     </classes>
