@@ -1,0 +1,14 @@
+[
+	{
+		"firstname":"Api Testing",
+		"lastname":"Testers"
+	},
+	{
+		"firstname":"Rest Assured",
+		"lastname":"Manual Testers"
+	},
+	{
+		"firstname":"Automation Testing",
+		"lastname":"Automation Testers"
+	}
+]

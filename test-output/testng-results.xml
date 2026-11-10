@@ -1,32 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-11-09T20:06:16 IST" name="Suite" finished-at="2026-11-09T20:06:22 IST" duration-ms="5681">
+  <suite started-at="2026-11-10T21:58:14 IST" name="Suite" finished-at="2026-11-10T21:58:17 IST" duration-ms="3048">
     <groups>
     </groups>
-    <test started-at="2026-11-09T20:06:16 IST" name="Test" finished-at="2026-11-09T20:06:22 IST" duration-ms="5681">
-      <class name="com.testautoamtion.apitesting.tests.DeleteApiRequest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testautoamtion.apitesting.tests.DeleteApiRequest@4fc5e095]" started-at="2026-11-09T20:06:16 IST" name="beforeMethod" finished-at="2026-11-09T20:06:16 IST" duration-ms="27" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="deleteApiRequest()[pri:0, instance:com.testautoamtion.apitesting.tests.DeleteApiRequest@4fc5e095]" started-at="2026-11-09T20:06:16 IST" name="deleteApiRequest" finished-at="2026-11-09T20:06:22 IST" duration-ms="5617" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteApiRequest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testautoamtion.apitesting.tests.DeleteApiRequest@4fc5e095]" started-at="2026-11-09T20:06:22 IST" name="afterMethod" finished-at="2026-11-09T20:06:22 IST" duration-ms="1" status="PASS">
+    <test started-at="2026-11-10T21:58:14 IST" name="Test" finished-at="2026-11-10T21:58:17 IST" duration-ms="3048">
+      <class name="com.testautoamtion.apitesting.tests.DatadrivenTestingUsingCSVFile">
+        <test-method signature="dataDrivenTestingUsingCSV(java.util.Map)[pri:0, instance:com.testautoamtion.apitesting.tests.DatadrivenTestingUsingCSVFile@5b40ceb]" started-at="2026-11-10T21:58:14 IST" name="dataDrivenTestingUsingCSV" data-provider="CSVTestData" finished-at="2026-11-10T21:58:15 IST" duration-ms="1187" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=deleteApiRequest status=SUCCESS method=DeleteApiRequest.deleteApiRequest()[pri:0, instance:com.testautoamtion.apitesting.tests.DeleteApiRequest@4fc5e095] output={null}]]]>
+                <![CDATA[{firstname=api testing, lastname=testers, totalprice=1000}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.testautoamtion.apitesting.tests.DeleteApiRequest -->
+        </test-method> <!-- dataDrivenTestingUsingCSV -->
+        <test-method signature="dataDrivenTestingUsingCSV(java.util.Map)[pri:0, instance:com.testautoamtion.apitesting.tests.DatadrivenTestingUsingCSVFile@5b40ceb]" started-at="2026-11-10T21:58:15 IST" name="dataDrivenTestingUsingCSV" data-provider="CSVTestData" finished-at="2026-11-10T21:58:16 IST" duration-ms="870" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstname=rest assured, lastname=api testers, totalprice=2000}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataDrivenTestingUsingCSV -->
+        <test-method signature="dataDrivenTestingUsingCSV(java.util.Map)[pri:0, instance:com.testautoamtion.apitesting.tests.DatadrivenTestingUsingCSVFile@5b40ceb]" started-at="2026-11-10T21:58:16 IST" name="dataDrivenTestingUsingCSV" data-provider="CSVTestData" finished-at="2026-11-10T21:58:17 IST" duration-ms="914" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstname=postman, lastname=automation testers, totalprice=3000}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataDrivenTestingUsingCSV -->
+      </class> <!-- com.testautoamtion.apitesting.tests.DatadrivenTestingUsingCSVFile -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

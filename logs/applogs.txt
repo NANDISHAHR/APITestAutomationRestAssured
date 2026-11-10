@@ -1,133 +1,87 @@
-2026-11-09T19:29:59,927 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-11-09T19:29:59,929 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-11-09T19:29:59,930 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-11-09T19:29:59,930 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-11-09T19:29:59,930 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-11-09T19:29:59,930 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-11-09T19:29:59,931 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-11-09T19:29:59,931 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-11-09T19:29:59,931 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-11-09T19:29:59,931 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-11-09T19:29:59,931 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-11-09T19:29:59,931 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-11-09T19:29:59,932 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-11-09T19:29:59,932 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-11-09T19:29:59,932 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-11-09T19:29:59,932 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-11-09T19:29:59,934 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-11-09T19:29:59,938 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
-2026-11-09T19:29:59,938 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-11-09T19:29:59,939 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-11-09T19:29:59,940 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-11-09T19:29:59,940 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-11-09T19:29:59,940 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-11-09T19:29:59,940 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-11-09T19:29:59,940 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-11-09T19:29:59,940 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-11-09T19:29:59,941 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-11-09T19:29:59,941 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-11-09T19:29:59,941 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-11-09T19:29:59,941 [main] INFO  (Logger.java:112) - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-11-09T19:29:59,944 [main] INFO  (Logger.java:112) - [TestNG] Running:
-  /private/var/folders/7y/zp44n5wd2f53dnzz4fyjwf080000gn/T/testng-eclipse--1417232005/testng-customsuite.xml
+2026-11-10T21:58:14,364 [main] INFO  (Logger.java:112) - [TestNG] Running:
+  /Users/hemanthmk/eclipse-workspace/APIAutomationRestAssured/suits/datadriventestingusingcsv.xml
 
-2026-11-09T19:29:59,950 [main] INFO  (Logger.java:112) - [Utils] DynamicGraphHelper.createDynamicGraph() took 1 ms.
-2026-11-09T19:29:59,983 [main] INFO  (DeleteApiRequest.java:31) - Delete API Request started...
-2026-11-09T19:30:01,036 [main] INFO  (RestAssuredListeners.java:22) - 
+2026-11-10T21:58:15,575 [main] INFO  (RestAssuredListeners.java:22) - 
  Method => POST
  URI => https://restful-booker.herokuapp.com/booking
  Response Body => {
-    "firstname" : "Jim",
-    "lastname" : "Brown",
-    "totalprice" : 111,
-    "depositpaid" : true,
-    "bookingdates" : {
-        "checkin" : "2018-01-01",
-        "checkout" : "2019-01-01"
-    },
-    "additionalneeds" : "Breakfast"
+  "additionalneeds" : "Breakfast",
+  "bookingdates" : {
+    "checkin" : "2026-01-01",
+    "checkout" : "2026-01-03"
+  },
+  "depositpaid" : true,
+  "firstname" : "api testing",
+  "lastname" : "testers",
+  "totalprice" : 1000
 }
  Response Body => {
-    "bookingid": 4770,
+    "bookingid": 3773,
     "booking": {
-        "firstname": "Jim",
-        "lastname": "Brown",
-        "totalprice": 111,
+        "firstname": "api testing",
+        "lastname": "testers",
+        "totalprice": 1000,
         "depositpaid": true,
         "bookingdates": {
-            "checkin": "2018-01-01",
-            "checkout": "2019-01-01"
+            "checkin": "2026-01-01",
+            "checkout": "2026-01-03"
         },
         "additionalneeds": "Breakfast"
     }
 }
-2026-11-09T19:30:01,863 [main] INFO  (RestAssuredListeners.java:22) - 
- Method => GET
- URI => https://restful-booker.herokuapp.com/booking/4770
- Response Body => null
- Response Body => {
-    "firstname": "Jim",
-    "lastname": "Brown",
-    "totalprice": 111,
-    "depositpaid": true,
-    "bookingdates": {
-        "checkin": "2018-01-01",
-        "checkout": "2019-01-01"
-    },
-    "additionalneeds": "Breakfast"
-}
-2026-11-09T19:30:05,563 [main] INFO  (DeleteApiRequest.java:81) - Delete API Request ended...
-2026-11-09T19:30:05,602 [main] INFO  (Logger.java:112) - [TestNG] Time taken by org.testng.reporters.jq.Main@77d4ac52: 15 ms
-2026-11-09T19:30:05,602 [main] INFO  (Logger.java:112) - [TestNG] Time taken by org.testng.reporters.FailedReporter@161dd92a: 0 ms
-2026-11-09T19:30:05,605 [main] INFO  (Logger.java:112) - [TestNG] Time taken by org.testng.reporters.XMLReporter@9f86dc3: 3 ms
-2026-11-09T19:30:05,606 [main] INFO  (Logger.java:112) - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@32faa16c: 1 ms
-2026-11-09T19:30:05,607 [main] INFO  (Logger.java:112) - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@5a13fcf3: 1 ms
-2026-11-09T19:30:05,607 [main] INFO  (Logger.java:112) - [TestNG] Time taken by org.testng.internal.ExitCodeListener@250b5e5b: 0 ms
-2026-11-09T20:06:16,666 [main] INFO  (Logger.java:112) - [TestNG] Running:
-  /Users/hemanthmk/eclipse-workspace/APIAutomationRestAssured/suits/restassuredapitest.xml
-
-2026-11-09T20:06:16,766 [main] INFO  (DeleteApiRequest.java:31) - Delete API Request started...
-2026-11-09T20:06:17,941 [main] INFO  (RestAssuredListeners.java:22) - 
+2026-11-10T21:58:16,484 [main] INFO  (RestAssuredListeners.java:22) - 
  Method => POST
  URI => https://restful-booker.herokuapp.com/booking
  Response Body => {
-    "firstname" : "Jim",
-    "lastname" : "Brown",
-    "totalprice" : 111,
-    "depositpaid" : true,
-    "bookingdates" : {
-        "checkin" : "2018-01-01",
-        "checkout" : "2019-01-01"
-    },
-    "additionalneeds" : "Breakfast"
+  "additionalneeds" : "Breakfast",
+  "bookingdates" : {
+    "checkin" : "2026-01-01",
+    "checkout" : "2026-01-03"
+  },
+  "depositpaid" : true,
+  "firstname" : "rest assured",
+  "lastname" : "api testers",
+  "totalprice" : 2000
 }
  Response Body => {
-    "bookingid": 2783,
+    "bookingid": 3778,
     "booking": {
-        "firstname": "Jim",
-        "lastname": "Brown",
-        "totalprice": 111,
+        "firstname": "rest assured",
+        "lastname": "api testers",
+        "totalprice": 2000,
         "depositpaid": true,
         "bookingdates": {
-            "checkin": "2018-01-01",
-            "checkout": "2019-01-01"
+            "checkin": "2026-01-01",
+            "checkout": "2026-01-03"
         },
         "additionalneeds": "Breakfast"
     }
 }
-2026-11-09T20:06:18,852 [main] INFO  (RestAssuredListeners.java:22) - 
- Method => GET
- URI => https://restful-booker.herokuapp.com/booking/2783
- Response Body => null
+2026-11-10T21:58:17,405 [main] INFO  (RestAssuredListeners.java:22) - 
+ Method => POST
+ URI => https://restful-booker.herokuapp.com/booking
  Response Body => {
-    "firstname": "Jim",
-    "lastname": "Brown",
-    "totalprice": 111,
-    "depositpaid": true,
-    "bookingdates": {
-        "checkin": "2018-01-01",
-        "checkout": "2019-01-01"
-    },
-    "additionalneeds": "Breakfast"
+  "additionalneeds" : "Breakfast",
+  "bookingdates" : {
+    "checkin" : "2026-01-01",
+    "checkout" : "2026-01-03"
+  },
+  "depositpaid" : true,
+  "firstname" : "postman",
+  "lastname" : "automation testers",
+  "totalprice" : 3000
 }
-2026-11-09T20:06:22,331 [main] INFO  (DeleteApiRequest.java:81) - Delete API Request ended...
+ Response Body => {
+    "bookingid": 3787,
+    "booking": {
+        "firstname": "postman",
+        "lastname": "automation testers",
+        "totalprice": 3000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2026-01-01",
+            "checkout": "2026-01-03"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
