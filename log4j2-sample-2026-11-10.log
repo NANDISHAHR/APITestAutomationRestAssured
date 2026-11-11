@@ -1,0 +1,87 @@
+2026-11-10T21:58:14,364 [main] INFO  (Logger.java:112) - [TestNG] Running:
+  /Users/hemanthmk/eclipse-workspace/APIAutomationRestAssured/suits/datadriventestingusingcsv.xml
+
+2026-11-10T21:58:15,575 [main] INFO  (RestAssuredListeners.java:22) - 
+ Method => POST
+ URI => https://restful-booker.herokuapp.com/booking
+ Response Body => {
+  "additionalneeds" : "Breakfast",
+  "bookingdates" : {
+    "checkin" : "2026-01-01",
+    "checkout" : "2026-01-03"
+  },
+  "depositpaid" : true,
+  "firstname" : "api testing",
+  "lastname" : "testers",
+  "totalprice" : 1000
+}
+ Response Body => {
+    "bookingid": 3773,
+    "booking": {
+        "firstname": "api testing",
+        "lastname": "testers",
+        "totalprice": 1000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2026-01-01",
+            "checkout": "2026-01-03"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2026-11-10T21:58:16,484 [main] INFO  (RestAssuredListeners.java:22) - 
+ Method => POST
+ URI => https://restful-booker.herokuapp.com/booking
+ Response Body => {
+  "additionalneeds" : "Breakfast",
+  "bookingdates" : {
+    "checkin" : "2026-01-01",
+    "checkout" : "2026-01-03"
+  },
+  "depositpaid" : true,
+  "firstname" : "rest assured",
+  "lastname" : "api testers",
+  "totalprice" : 2000
+}
+ Response Body => {
+    "bookingid": 3778,
+    "booking": {
+        "firstname": "rest assured",
+        "lastname": "api testers",
+        "totalprice": 2000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2026-01-01",
+            "checkout": "2026-01-03"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2026-11-10T21:58:17,405 [main] INFO  (RestAssuredListeners.java:22) - 
+ Method => POST
+ URI => https://restful-booker.herokuapp.com/booking
+ Response Body => {
+  "additionalneeds" : "Breakfast",
+  "bookingdates" : {
+    "checkin" : "2026-01-01",
+    "checkout" : "2026-01-03"
+  },
+  "depositpaid" : true,
+  "firstname" : "postman",
+  "lastname" : "automation testers",
+  "totalprice" : 3000
+}
+ Response Body => {
+    "bookingid": 3787,
+    "booking": {
+        "firstname": "postman",
+        "lastname": "automation testers",
+        "totalprice": 3000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2026-01-01",
+            "checkout": "2026-01-03"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testautoamtion.apitesting.tests.DeleteApiRequest">
+      <class name="com.testautoamtion.apitesting.tests.DatadrivenTestingUsingExcelFile">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="deleteApiRequest"/>
-          <include name="afterMethod"/>
+          <include name="dataDrivenTestingUsingExcelFile"/>
         </methods>
-      </class> <!-- com.testautoamtion.apitesting.tests.DeleteApiRequest -->
+      </class> <!-- com.testautoamtion.apitesting.tests.DatadrivenTestingUsingExcelFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
